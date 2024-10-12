@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const colors = ["red", "black", "yellow"];
+        // let firstColor = colors[0];
+        // let secondColor = colors[1];
+        // console.log("firstColor", firstColor);
+
+        const [firstColor, secondColor, otherColor] = colors;
+        console.log("firstColor", firstColor);
+        console.log("secondColor", secondColor);
+        console.log("otherColor", otherColor);
+        // object 
+        const user = {
+            id: 1,
+            userName: "Thu Chi",
+            age: 18
+        }
+        let fullName = user.userName
+        console.log(fullName);
+
+        const { id, userName, age } = user;
+        console.log("name", userName);
+        // dunfg truy xuat phan tu trong mang hoac thuoc tinh doi tuong  1 canh nhanh chong
+    </script>
+</body>
+
+</html>

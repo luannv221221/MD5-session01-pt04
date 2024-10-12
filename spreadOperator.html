@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const array1 = [1, 2, 3];
+        const array2 = [4, 5, 6];
+        // const array3 = array1.concat(array2);
+        // console.log(array3);
+        const array3 = [...array1]; // copy mang 
+
+        const array4 = [...array1, ...array2];
+        console.log(array4);
+
+        // SpreadOperator with Object 
+        const accountInfo = {
+            id: 1,
+            fullName: "Thu Chi"
+        };
+        const accountAddress = {
+            address: "Ha Noi",
+            zipCode: 1000000
+        };
+
+        const account = {
+            id: 1,
+            fullName: "Thu Chi",
+            address: "Ha Noi",
+            zipCode: 1000000
+        }
+
+        console.log("account", account);
+        const account2 = { ...accountInfo, ...accountAddress };
+        console.log("account2", account2);
+    </script>
+</body>
+
+</html>

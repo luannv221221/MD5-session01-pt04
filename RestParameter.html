@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const sum = (...numbers) => {
+            let total = 0;
+            for (let index = 0; index < numbers.length; index++) {
+                total += numbers[index];
+            }
+            return total;
+        }
+        console.log("1+2 = ", sum(1, 2));
+        console.log("1+2+3 = ", sum(1, 2, 3));
+        console.log("1+2+3+4 = ", sum(1, 2, 3, 4));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // khai báo mảng 
+        const array = ["Trang", "Minh", "Hồng"];
+        // console.log(array[1]);
+        // for (let index = 0; index < array.length; index++) {
+        //     console.log(array[index]);
+        // }
+        // for - in
+
+        // for (const key in array) {
+        //     // console.log(key);
+        //     console.log(array[key]);
+        // }
+        // for-of
+        // for (const item of array) {
+        //     console.log(item);
+        // }
+        // for-Each
+        // không có return trả về undefined
+        // array.forEach((element) => {
+        //     console.log(element);
+        // });
+
+        // Map
+        // return về mảng mới 
+        // array.map((value) => {
+        //     console.log(value);
+        // });
+
+        // dùng map return 
+        // const demo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        // trả về mảng mới thay đổi giá trị của phần tử 
+        // const result = demo.map(item => {
+        //     return item % 2 == 0;
+        // });
+
+        // từ mảng này lấy ra phần tử có giá trị chẵn và chèn vào mảng mới 
+
+        // Fillter
+        const demo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const result = demo.filter(item => {
+            return item % 2 == 0;
+        });
+        console.log(result);
+        const result1 = demo.find(item => {
+            return item > 9
+        })
+        console.log(result1);
+
+        // mangr dooi tuong 
+        const product = [
+            { id: 1, name: "ABC", price: 100 },
+            { id: 2, name: "N", price: 50 },
+            { id: 3, name: "F", price: 10 },
+            { id: 4, name: "G", price: 20 },
+        ];
+        // duyet casc phan tuw mang product in ra ten va gia cua san pham
+        // Lay ra mang san pham co gia > 10 fillter
+        // Tim ve san pham co id = 3 ==> find
+    </script>
+</body>
+
+</html>
